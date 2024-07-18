@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="inner_container"></div>
+        <div class="upper_container">
+            <!-- search section -->
+           <div class="search_section">
+                <div class="search_space">
+                    <input type="search" name="search" id="search" placeholder="Enter city name" >
+                </div>
+                <div class="search_ion"> 
+                    <i class="fa-solid fa-magnifying-glass" id="search_symbol"></i>
+                </div>
+            </div>
+            <!-- weather image and temp. section -->
+            <div class="weather_section">
+                 <div class="error_msg"></div>
+
+                <div class="weather_image">
+                    <img src="rain.png" class="images">
+                </div>
+                <div class="weather_temp"> --°C</div>
+                <div class="city_name"> -------</div>
+            </div>
+
+            <!-- other information -->
+            <div class="other_info">
+
+                <div class="humidity">
+                    <div class="humidity_text">Humidity</div>
+                    <div class="humidity_details">
+                        <div class="humidity_icon">
+                           <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div class="humidity_value">--%</div>
+                    </div>
+                </div>
+
+                <!-- wind- section -->
+                <div class="humidity">
+                    <div class="humidity_text" >Wind Speed</div>
+                    <div class="humidity_details">
+                        <div class="humidity_icon">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <div class="humidity_value" id="wind">--km/hr</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+
+</body>
+</html>
+<script src="script.js"></script>
